@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-// import headerImg from "../assets/img/header-img.svg";
 import headerImg from "../assets/img/chibi.png"
 
 export const Banner = () => {
@@ -50,7 +49,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <div className="animate__animated animate__fadeIn">
                             <span className="tagline">Welcome to my Portfolio!</span>
-                            <h1>{`Hi! I'm Artemis`} <span className="txt-rotate" data-period="1000" data-rotate={JSON.stringify(toRotate)}><span className="wrap">{text}</span></span></h1>
+                            <h1>{`Hi! I'm Artemis,`} <span className="txt-rotate" data-period="1000" data-rotate={JSON.stringify(toRotate)}><span className="wrap">{text}</span></span></h1>
                             <p>I excel at building efficient, user-friendly applications by combining creativity with technical proficiency.
                             Known for a strong work ethic, perseverance, and adaptability in fast-paced, collaborative environments.
                             Seeking new opportunities to contribute to exciting projects. Let's connect and create innovative solutions together.

@@ -1,9 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 // import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon4 from "../assets/img/nav-icon4.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.png';
+import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.png';
 
 export const Footer = () => {
 return (
@@ -19,6 +21,7 @@ return (
             <a href="https://www.linkedin.com/in/chun-liu97/"><img src={navIcon1} alt="Icon" /></a>
             <a href="https://www.behance.net/gallery/44168651/Class-Assignments"><img src={navIcon4} alt="Icon" /></a>
             <a href="https://www.instagram.com/artemis.unagi/"><img src={navIcon3} alt="Icon" /></a>
+            <a href="https://docs.google.com/document/d/1mdl9OeXwFaPUVTDZfex3xOl1E94emNmEu3aJz-G3SAE/edit?usp=sharing"><img src={navIcon2} alt="" /></a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
         </Col>

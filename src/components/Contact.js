@@ -4,7 +4,6 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Container, Row, Col } from "react-bootstrap";
 
-
 export const Contact = () => {
     const [formState, setFormState] = useState({
     firstName: '',
@@ -16,6 +15,7 @@ export const Contact = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const [buttonText, setButtonText] = useState('Send');
     const [status, setStatus] = useState({});
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleInputChange = (event) => {
     setFormState({
@@ -31,16 +31,16 @@ export const Contact = () => {
 
     const handleSubmit = (event) => {
     event.preventDefault();
-    if (!formState.name || !formState.email || !formState.message) {
+    if (!formState.firstName || !formState.lastName || !formState.email || !formState.message) {
         setErrorMessage("All fields must be filled out.");
     } else if (!validateEmail(formState.email)) {
         setErrorMessage("Invalid email format.");
     } else {
         setErrorMessage(null);
         setButtonText('Sending...')
-        const formspreeEndpoint = "https://formspree.io/f/xnqkddaz";
+        const apiKey = process.env.REACT_APP_FORMSPREE_API_KEY;
 
-        fetch(formspreeEndpoint, {
+        fetch(apiKey, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -49,21 +49,27 @@ export const Contact = () => {
         })
         .then(response => response.json())
         .then(data => {
+            console.log(data)
         if (data.ok) {
             setFormState({
-            name: '',
-            email: '',
-            message: ''
+                firstName: '',
+                lastName: '',
+                email: '',
+                message: ''
             });
             setButtonText("Send");
-            setStatus({ success: true, message: "Message Sent"});
+            // setStatus({ success: true, message: "Message Sent"});
+            <p className="success-message">{successMessage}</p>;
         } else {
-            setStatus({ success: false, message: "Something went wrong, please try again later."});
+            setStatus({ success: false, message: "Something went wrong, please try again later." });
         }
         })
         .catch((error) => {
         setErrorMessage("An error occurred.");
         console.error('Error:', error);
+        })
+        .finally(() => {
+            setButtonText('Send');
         })
     }
     };
@@ -83,7 +89,7 @@ export const Contact = () => {
                                     <input
                                     className="form-input form-control"
                                     type="text"
-                                    name="first name name"
+                                    name="firstName"
                                     placeholder="First Name"
                                     value={formState.firstName}
                                     onChange={handleInputChange}
@@ -93,7 +99,7 @@ export const Contact = () => {
                                     <input
                                     className="form-input form-control"
                                     type="text"
-                                    name="last name"
+                                    name="lastName"
                                     placeholder="Last Name"
                                     value={formState.lastName}
                                     onChange={handleInputChange}
@@ -129,6 +135,9 @@ export const Contact = () => {
                                             {status.message}
                                         </p>
                                     </Col>
+                                )}
+                                {successMessage && (
+                                    <p className="success-message">{successMessage}</p>
                                 )}
                             </Row>
                         </form>

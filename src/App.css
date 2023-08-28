@@ -299,7 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(51, 40, 204, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -319,6 +319,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  background: linear-gradient(90.21deg, rgba(51, 40, 204, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .banner button {
   color: #fff;
@@ -416,6 +418,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
+.project h3 {
+  color: white;
+}
+.project ul {
+  color: #B8B8B8;
+  font-size: 18px;
+}
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -445,7 +456,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -473,11 +484,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 24px;/* Set a fixed height value */
 }
+
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -523,12 +535,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.success-message {
+  color: black;
+}
+
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
   width: 92%;
+  margin-right: 20px;
 }
 .contact h2 {
 	font-size: 45px;
