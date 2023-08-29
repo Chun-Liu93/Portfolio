@@ -536,7 +536,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .success-message {
-  color: black;
+  color: rgb(0, 255, 225);
+  font-size: 24px;
+}
+
+.failed-message{
+  color: rgb(190, 0, 0);
+  font-size: 24px;
 }
 
 .contact {

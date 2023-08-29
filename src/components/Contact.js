@@ -17,6 +17,7 @@ export const Contact = () => {
     const [status, setStatus] = useState({});
     const [successMessage, setSuccessMessage] = useState('');
 
+
     const handleInputChange = (event) => {
     setFormState({
         ...formState,
@@ -25,9 +26,9 @@ export const Contact = () => {
     };
 
     const validateEmail = (email) => {
-    const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-    return re.test(email);
-    };
+        const re = /^[^\s@]+@[^\s@]+\.(com|net|org|edu|gov|mil|co\.uk|io|ai|us)$/i;
+        return re.test(email);
+        };
 
     const handleSubmit = (event) => {
     event.preventDefault();
@@ -50,28 +51,28 @@ export const Contact = () => {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-        if (data.ok) {
-            setFormState({
-                firstName: '',
-                lastName: '',
-                email: '',
-                message: ''
-            });
-            setButtonText("Send");
-            // setStatus({ success: true, message: "Message Sent"});
-            <p className="success-message">{successMessage}</p>;
-        } else {
-            setStatus({ success: false, message: "Something went wrong, please try again later." });
+            if (data.ok) {
+                setFormState({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    message: ''
+                });
+                setButtonText("Send");
+                // setStatus({ success: true, message: "Message Sent"});
+                setSuccessMessage("Message Sent!!");
+            } else {
+                setStatus({ success: false, message: "Something went wrong, please try again later." });
+            }
+            })
+            .catch((error) => {
+            setErrorMessage("An error occurred.");
+            console.error('Error:', error);
+            })
+            .finally(() => {
+                setButtonText('Send');
+            })
         }
-        })
-        .catch((error) => {
-        setErrorMessage("An error occurred.");
-        console.error('Error:', error);
-        })
-        .finally(() => {
-            setButtonText('Send');
-        })
-    }
     };
 
     return (
@@ -138,6 +139,9 @@ export const Contact = () => {
                                 )}
                                 {successMessage && (
                                     <p className="success-message">{successMessage}</p>
+                                )}
+                                {errorMessage && (
+                                    <p className="failed-message">{errorMessage}</p>
                                 )}
                             </Row>
                         </form>
