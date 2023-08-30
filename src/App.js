@@ -6,7 +6,7 @@ import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import { Totoro } from "./components/Totoro";
+import { Totoro } from "./components/Animation";
 import { Footer } from "./components/Footer";
 
 function App() {

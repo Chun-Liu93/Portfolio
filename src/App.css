@@ -261,9 +261,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Totoro Css ************/
-/* .anime-character{
+.anime-character{
   background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
-} */
+}
 
 /************ Banner Css ************/
 /* Define your banner container */
@@ -409,6 +409,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+
+.project-title {
+  font-size: 46px;
+  text-align: center;
+}
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
