@@ -22,31 +22,31 @@ const project1 = [
     imgUrl: projImg2,
     },
     {
-    title: 'Home',
-    description: 'Design & Development',
+    title: 'Adventure Form',
+    description: 'A form for users to post on the adventure they would like to share to our users',
     imgUrl: projImg1,
     },
     {
-    title: 'Business Startup',
-    description: 'Design & Development',
+    title: 'Post Page',
+    description: 'Page in which users can see the comments, intensity, price, and rating of the activity that was posted',
     imgUrl: projImg3,
     },
 ];
 
 const project2 = [
     {
-    title: 'Home Page',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    title: 'Details Page',
+    description: 'This is the page where it goes into greater details of each individual characters and their personality.',
     imgUrl: projImg4,
     },
     {
-    title: 'Login',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    title: 'Main Page',
+    description: 'Section in which users can look through the list of animes',
     imgUrl: projImg5,
     },
     {
-    title: 'Details',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    title: 'Login',
+    description: 'Login page',
     imgUrl: projImg6,
     }
 ]
@@ -54,17 +54,17 @@ const project2 = [
 const project3 = [
     {
     title: 'Home Page',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    description: 'Home page that are categorized in 3 sections from sales, services, and inventory',
     imgUrl: projImg7,
     },
     {
-    title: 'Login',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    title: 'Details',
+    description: 'Inventory form in which the company can include a car from a specific manufacturer be included',
     imgUrl: projImg8,
     },
     {
     title: 'Details',
-    description: 'User has access to customize their pfp as well as view and edit their posts',
+    description: 'Sales category in which users can set an appointment',
     imgUrl: projImg9,
     }
 ]

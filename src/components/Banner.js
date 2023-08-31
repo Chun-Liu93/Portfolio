@@ -54,7 +54,9 @@ export const Banner = () => {
                             Known for a strong work ethic, perseverance, and adaptability in fast-paced, collaborative environments.
                             Seeking new opportunities to contribute to exciting projects. Let's connect and create innovative solutions together.
                             </p>
-                            <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                            <a href="https://www.linkedin.com/in/chun-liu97/" target="_blank" rel="noopener noreferrer">
+                                <button>Let’s Connect <ArrowRightCircle size={25} /></button>
+                            </a>
                         </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

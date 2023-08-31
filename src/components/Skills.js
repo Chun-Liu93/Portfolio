@@ -50,7 +50,7 @@ return (
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>"These are my skills"</p>
+                        <p>"Here are the skills I'm proficient in as a software engineer:"</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={html} alt="Image" />
