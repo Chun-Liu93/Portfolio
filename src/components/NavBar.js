@@ -52,7 +52,7 @@ return (
             <span className="navbar-text">
             <div className="social-icon">
                 <a href="https://www.linkedin.com/in/chun-liu97/"><img src={navIcon1} alt="" /></a>
-                <a href="https://www.behance.net/gallery/44168651/Class-Assignments"><img src={navIcon4} alt="" /></a>
+                <a href="https://www.behance.net/artemisliu89"><img src={navIcon4} alt="" /></a>
                 <a href="https://www.instagram.com/artemis.unagi/"><img src={navIcon3} alt="" /></a>
                 <a href="https://docs.google.com/document/d/1mdl9OeXwFaPUVTDZfex3xOl1E94emNmEu3aJz-G3SAE/edit?usp=sharing"><img src={navIcon2} alt="" /></a>
             </div>

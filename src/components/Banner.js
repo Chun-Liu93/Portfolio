@@ -7,9 +7,9 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(200 - Math.random() * 100);
     const toRotate = ["Web Developer", "Web Designer"];
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -38,7 +38,7 @@ export const Banner = () => {
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200);
         }
     };
 
@@ -54,7 +54,7 @@ export const Banner = () => {
                             Known for a strong work ethic, perseverance, and adaptability in fast-paced, collaborative environments.
                             Seeking new opportunities to contribute to exciting projects. Let's connect and create innovative solutions together.
                             </p>
-                            <a href="https://www.linkedin.com/in/chun-liu97/" target="_blank" rel="noopener noreferrer">
+                            <a className="linkedin-connect" href="https://www.linkedin.com/in/chun-liu97/" target="_blank" rel="noopener noreferrer">
                                 <button>Let’s Connect <ArrowRightCircle size={25} /></button>
                             </a>
                         </div>

@@ -11,18 +11,16 @@ useEffect(() => {
     animationInterval = setInterval(() => {
         setPosition((prevPosition) => {
         if (prevPosition >= 50) {
-            // If position is halfway, reset it
             return 0;
         } else {
-            // Otherwise, continue moving
-            return prevPosition + 5; // Adjust the speed by changing the value
+            return prevPosition + 5; 
         }
         });
-    }, 100); // Adjust the interval (in milliseconds) for smoother or faster animation
+    }, 100); 
     }
 
     return () => {
-    clearInterval(animationInterval); // Clear the interval when the component unmounts
+    clearInterval(animationInterval); 
     };
 }, [animationStopped]);
 

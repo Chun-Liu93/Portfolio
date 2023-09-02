@@ -112,6 +112,15 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+.profile-pic{
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    border-radius: 50%; /* Makes the frame circular */
+    overflow: hidden; /* Hides the parts of the image outside the circle */
+    object-fit: cover;
+}
+
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -326,13 +335,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
 @media (max-width: 768px) {
   .banner p {
-    font-size: 16px; /* Adjust the font size for smaller screens */
-    width: 100%; /* Make the width 100% to fit smaller screens */
-    padding: 10px; /* Add some padding for better spacing on smaller screens */
+    font-size: 16px; 
+    width: 100%; 
+    padding: 10px; 
   }
+}
+
+.linkedin-connect {
+  text-decoration: none;
 }
 
 .banner button {
