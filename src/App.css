@@ -266,14 +266,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
-/* Define your banner container */
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  position: relative; /* Add position relative to create stacking context */
+  position: relative; 
 }
 
-/* Define the background image and blur effect */
 .banner::before {
   content: "";
   position: absolute;
@@ -287,17 +285,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
   filter: blur(8px);
   -webkit-filter: blur(.5px);
-  z-index: -1; /* Place the background behind other content */
+  z-index: -1; 
 }
 
 .banner img {
   animation: updown 3s linear infinite;
-  max-width: 100%; /* This ensures the image scales down while maintaining its aspect ratio */
-  height: auto; /* Allows the image to scale proportionally */
-  width: auto; /* Allows the image to scale proportionally */
-  max-height: 465px; /* Set the maximum height you want for your image */
-  display: block; /* Ensures the image behaves as a block element */
-  margin: 0 auto; /* Centers the image horizontally if needed */
+  max-width: 100%; 
+  height: auto; 
+  width: auto; 
+  max-height: 465px; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .banner .tagline {
@@ -327,6 +325,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(51, 40, 204, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+    width: 100%; /* Make the width 100% to fit smaller screens */
+    padding: 10px; /* Add some padding for better spacing on smaller screens */
+  }
+}
+
 .banner button {
   color: #fff;
   font-weight: 700;
