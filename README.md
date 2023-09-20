@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository showcases my work as a software enginee
 
 ## About Me
 
-I'm Artemis, a passionate software engineer who recently start this year in developing web and mobile applications. I enjoy video games, working out, and coding! I'm known for my strong work ethic and dedication to creating efficient, user-friendly solutions.
+I'm Chun Liu, a passionate software engineer who recently start this year in developing web and mobile applications. I enjoy video games, working out, and coding! I'm known for my strong work ethic and dedication to creating efficient, user-friendly solutions.
 
 
 ## Projects

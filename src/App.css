@@ -120,7 +120,6 @@ p.danger {
     object-fit: cover;
 }
 
-
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -157,8 +156,8 @@ span.navbar-text {
     margin-left: 14px;
 }
 .social-icon a {
-    width: 42px;
-    height: 42px;
+    width: 80px;
+    height: 80px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
