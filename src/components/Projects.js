@@ -10,6 +10,9 @@ import projImg6 from '../assets/img/Anime3.png';
 import projImg7 from '../assets/img/Car1.png';
 import projImg8 from '../assets/img/Car2.png';
 import projImg9 from '../assets/img/Car3.png';
+import projImg10 from '../assets/img/movies1.png';
+import projImg11 from '../assets/img/movies2.png';
+import projImg12 from '../assets/img/movies3.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -69,6 +72,24 @@ const project3 = [
     }
 ]
 
+const project4 = [
+    {
+    title: 'Home Page',
+    description: 'Home page that holds 20 movies per page and have paginaton feature',
+    imgUrl: projImg10,
+    },
+    {
+    title: 'Filtered Search',
+    description: 'Filters through movie API based on what users search for on the search bar',
+    imgUrl: projImg11,
+    },
+    {
+    title: 'Liked Page',
+    description: 'Users are able to like specific movies and be able to go to the "Liked Page" whenever they want to go back and see what was favorited',
+    imgUrl: projImg12,
+    }
+]
+
 
 useEffect(() => {
     // Use animate.css classes when the component is visible
@@ -102,7 +123,10 @@ return (
                         <Nav.Link eventKey="second">Anime</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="third">Carcar</Nav.Link>
+                        <Nav.Link eventKey="third">Car City</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="fourth">Moovei</Nav.Link>
                     </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp">
@@ -186,6 +210,33 @@ return (
                         <p>
                             <b>Skills: Django · React.js · Python · CSS · JavaScript · Docker · Bootstrap · </b>
                             <a href="https://gitlab.com/ArtemisLiu93/project-beta" alt="gitlab link">Gitlab</a>
+                        </p>
+                        </div>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                        <div className="animate-on-visible">
+                        <Row>
+                        {project4.map((project4, index) => {
+                            return (
+                            <ProjectCard key={index} {...project4} />
+                            );
+                        })}
+                        </Row>
+                        <div className="project-title">Moovei</div>
+                        <p>
+                        Introducing the Ultimate Movie Explorer – Your gateway to discovering and curating your favorite films! Our platform offers a seamless browsing experience with the latest trending movies, detailed information at your fingertips, and an intuitive interface designed for movie lovers like you. Easily search, save, and revisit your top picks with our interactive features, including a personalized 'Liked Movies' list. 
+                            <br></br><br></br>
+                        </p>
+                        <ul>
+                            <li>Discover Popular Movies: Explore a curated list of the top 20 trending movies, updated dynamically using The Movie Database (TMDb) API.</li>
+                            <li>Detailed Movie Information: Access comprehensive details for each movie, including titles, posters, and more, all in one place.</li>
+                            <li>User-Friendly Pagination: Easily navigate through the movie list with seamless pagination for a smooth browsing experience.</li>
+                            <li>Filtering Options: Users can easily refine user activity searches with various filters, including price range, intensity level, and ratings. This ensures personalized recommendations tailored to individual preferences.</li>
+                            <li>Effortless Search Functionality: Find movies instantly using a search bar that displays results only when you press enter, making searches focused and efficient.</li>
+                        </ul>
+                        <p>
+                            <b>Skills: React · HTML · CSS · JavaScript · Docker · Redux · </b>
+                            <a href="https://github.com/Chun-Liu93/USD-P4/tree/main/movies" alt="gitlab link">Gitlab</a>
                         </p>
                         </div>
                     </Tab.Pane>
