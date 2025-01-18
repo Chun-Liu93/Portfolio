@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import totoroGif from "../assets/img/totoro.gif";
+//stuff
 
 export const Totoro = () => {
 const [position, setPosition] = useState(0);
